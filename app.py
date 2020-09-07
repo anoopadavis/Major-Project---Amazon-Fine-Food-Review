@@ -36,7 +36,7 @@ clf.fit(x_train_tr,y_train)
 
 
 st.title("SENTIMENT ANALYSIS")
-image=Image.open('https://github.com/anoopadavis/Major-Project---Amazon-Fine-Food-Review/blob/master/IMG-20200904-WA0251.jpg')
+image=Image.open('IMG-20200904-WA0251.jpg')
 st.image(image,width=800)
 review = st.text_input('Enter your short review :')
 df= {'review':review}
