@@ -13,7 +13,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score,confusion_matrix,classification_report
-df=pd.read_csv('https://media.githubusercontent.com/media/anoopadavis/Major-Project---Amazon-Fine-Food-Review/master/RDS.csv')
+df=pd.read_csv('https://github.com/anoopadavis/Major-Project---Amazon-Fine-Food-Review/blob/master/RDS.csv')
 df.drop(['Id','ProductId','UserId','ProfileName','Time','Text','HelpfulnessNumerator','HelpfulnessDenominator'],axis=1,inplace=True)
 df.dropna(axis=0,inplace=True)
 df['Sentiment']=df['Score'].apply(lambda Score: 'Positive' if Score>3 else('Negative' if Score<3 else "Neutral"))
