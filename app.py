@@ -28,6 +28,7 @@ x_train_tr = cv.fit_transform(x_train)
 x_test_tr= cv.transform(x_test)
 from sklearn.linear_model import LogisticRegression
 clf=LogisticRegression()
+
 clf.fit(x_train_tr,y_train)        
 
 
