@@ -8,6 +8,7 @@ Original file is located at
 """
 
 import streamlit as st
+
 from PIL import Image
 from sklearn.feature_extraction.text import CountVectorizer
 import pandas as pd
